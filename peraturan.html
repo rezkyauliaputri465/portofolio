@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peraturan Peminjaman </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <img class=gambar-header src="img/perpustakaan.jpeg" alt="foto perpustakaan">
+        <div>
+            <h1>Informasi dan Ketentuan Peminjaman Buku Perpustakaan</h1>
+            <p>Baca Peraturan dibawah dengan cermat!</p>
+        </div>
+    </header>
+    <main>
+        <h2>Aturan Peminjaman</h2>
+        <table class="tab" border="1" cellpadding="10" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Kategori Anggota</th>
+                    <th>Batas Pinjam (hari)</th>
+                    <th>Keringanan denda</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mahasiswa</td>
+                    <td>7</td>
+                    <td>50%</td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td>Dosen</td>
+                    <td>14</td>
+                    <td>25%</td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td>Umum</td>
+                    <td>5</td>
+                    <td>0%</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <div class="keterangan">
+            <h2>Ketentuan Umum Peminjaman</h2>
+            <ul>
+                <li>Anggota wajib mengembalikan buku tepat waktu</li>
+                <li>Anggota wajib menjaga buku agar tidak rusak atau hilang</li>
+                <li>Keterlambatan pengembalian buku dikenakan denda sesuai dengan Ketentuan perpustakaan</li>
+            </ul>
+        </div>
+        <br>
+        <div class="keterangan">
+            <h3>Rumus</h3>
+            <p><strong>Hari terlambat</strong> = max(0, lama pinjam-batas pinjam kategori)</p>
+            <p><strong>Denda Dasar</strong> = hari terlambat x tarif per hari</p>
+            <p><strong>Keringanan</strong> = denda dasar x (persen Keringanan / 100)</p>
+            <p><strong>Denda akhir</strong> = min(denda dasar - keringanan, harga buku)</p>
+        </div>
+
+        <p><a class="kembali" href="index.html">Kembali ke halaman utama</a></p>
+
+        </div>
+    </main>
+    <footer>
+        <p>Pemrograman Web Kelas A @2026</p>
+    </footer>
+</body>
+</html>

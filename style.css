@@ -1,0 +1,186 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f2f5f3;
+    color: #24332b;
+}
+
+header{
+    padding: 24px;
+    background: #176b45;
+    color: white;
+    align-items: center;
+    display: flex;
+    gap: 20px;
+}
+
+main {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+footer {
+    margin-top: 90px;
+    padding: 18px;
+    background: #176b45;
+    color: white;
+    text-align: center;
+}
+
+.dua-kolom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.kartu {
+    background: white;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px #00000010;
+}
+
+label {
+    display: block;
+    margin-top: 14px;
+    font-weight: bold;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 11px;
+    margin-top: 6px;
+    border: 1px solid #cbd5ce;
+    border-radius: 6px;
+}
+
+button {
+    margin-top: 18px;
+    padding: 11px 16px;
+    background: #176b45;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #105234;
+}
+button a{
+    color: white;
+    text-decoration: none;
+}
+main ol {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    padding: 0;
+    list-style: none;
+}
+main li a {
+    display: block;
+    padding: 20px;
+    background-color: white;
+    color: #123c69;
+    text-decoration: none;
+    border: 1px solid #000408;
+    border-radius: 10px;
+}
+main li a:hover {
+    background-color: #69756d;
+    border-color: #176b45;
+}
+.tombol-reset {
+    background: #69756d;
+}
+.tombol-kembali{
+    background-color: red;
+    float: right;
+}
+.pesan-error {
+    color: #a32121;
+    background: #fff0f0;
+    padding: 12px;
+    border-radius: 6px;
+}
+form {
+    padding: 24px;
+    background-color: white;
+    border: 1px solid #123c69;
+    border-radius: 10px;
+}
+form p {
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.profil-card {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 24px;
+    padding: 24px;
+    background-color: white;
+    border: 1px solid #000408;
+    border-radius: 10px;
+    margin-top: 40px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.foto-profil {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+th,
+td {
+    padding: 10px;
+    border: 1px solid #dce3de;
+    text-align: left;
+}
+
+th {
+    background: #dcefe3;
+}
+
+dl {
+    margin: 0;
+}
+dt {
+    font-weight: bold;
+    color: #01366b;
+}
+dd {
+    margin: 0 0 14px 0;
+}
+
+@media (max-width: 700px) {
+    header {
+        display: block;
+    }
+    .gambar-header {
+        width: 100%;
+        height: 160%;
+        margin-bottom: 12px;
+    }
+    main ol, .profil-card, .dua-kolom,.form-dua-kolom {
+        grid-template-columns: 1fr;
+    }
+}
+.gambar-header{
+    width: 210px;
+height: 100px;
+object-fit: cover;
+border-radius: 10px;
+}

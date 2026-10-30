@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Data Anggota</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img class=gambar-header src="img/perpustakaan.jpeg" alt="foto perpustakaan">
+        <div>
+            <h1>Formulir Data Anggota</h1>
+            <p>Silhakan isi</p>
+        </div>
+    </header>
+    <main>
+        <div>
+            <form action="profil.php" method="post">
+                <p>
+                    <label for="nama">Nama Lengkap</label><br>
+                    <input type="text" id="nama" name="nama" required>
+                </p>
+                <p>
+                    <label for="nomor_anggota">Nomor Anggota/NIM</label><br>
+                    <input type="text" id="nomor_anggota" name="nomor_anggota" required>
+                </p>
+                <p>
+                    <label for="email">Email</label><br>
+                    <input type="email" id="email" name="email" required>
+                </p>
+                <p>
+                    <label for="program_studi">Program Studi</label><br>
+                    <input type="text" id="program_studi" name="program_studi" required>
+                </p>
+                <p>
+                    <label for="kategori">Kategori</label><br>
+                    <select name="kategori" id="kategori" required>
+                    <option value="">Pilih Kategori</option>
+                    <option value="mahasiswa">Mahasiswa</option>
+                    <option value="dosen">Dosen</option>
+                    <option value="umum">Umum</option>
+                    </select>
+                </p>
+                <button class="tombol-submit" type="submit">Kirim Data</button>
+                <button class="tombol-reset" type="reset">Kosongkan Fields</button>
+            </form>
+        </div>
+        <p><a class="kembali" href="index.html">Kembali Ke Halaman Form</a></p>
+    </main>
+    <footer>
+        <p>Pemrograman Web Kelas A @2026</p>
+    </footer>
+</body>
+</html>
